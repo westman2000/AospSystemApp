@@ -1,0 +1,34 @@
+//
+//
+//
+android_app {
+
+    name: "VelocityApp",
+
+    srcs: [
+        "java/**/*.kt",
+    ],
+
+    resource_dirs: [
+        "res",
+    ],
+
+    static_libs: [
+        "androidx.core_core",
+        "androidx.appcompat_appcompat",
+        "androidx.annotation_annotation",
+        "com.google.android.material_material",
+    ],
+
+    optimize: {
+        enabled: false,
+    },
+
+    dex_preopt: {
+        enabled: false,
+    },
+
+    certificate: "platform",
+    sdk_version: "system_current",
+    privileged: true,
+}
